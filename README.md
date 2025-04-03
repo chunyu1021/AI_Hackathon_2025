@@ -5,7 +5,7 @@
 ## 使用材料
 
 - ICAM-540 (S-mount) * 1
-- Power cable * 1
+- Power cable with M12 connector * 1
 - Network adapter * 1
 - Ethernet cable * 1
 
@@ -36,6 +36,17 @@ ICAM-540 系列包含了基於 Python 的 CAMNavi SDK 和 NVIDIA DeepStream SDK�
 
 ![image](https://github.com/user-attachments/assets/2af6e526-4a6d-4264-8b9b-a9df6e3476ce)
 
-## ICAM 與筆電對接
+## 啟動 ICAM 相機服務 (Web Utility)
+
+ICAM 相機服務為可運行於瀏覽器上的網頁服務，使用者透過使用網頁介面操作 ICAM 的取像和網路設定。以下介紹在 ICAM 和遠端進入網頁介面的方式：
+
+- 由 ICAM 上瀏覽器進入：在瀏覽器的網址列中輸入 `localhost:5000`，即可連接網頁。
+- 由遠端 (另一台裝置) 進入：
+	- 區域網路連線：將裝置和 ICAM 連接於同一區域網路內，在裝置的瀏覽器網址列輸入 `<ICAM IP>:5000`，即可連接網頁。
+	- 網路線對接裝置和 ICAM：將網路線對接裝置與 ICAM，在裝置上設定網路連線 (TCP/IPv4)，IP 設定為 `192.168.0.X` (X 可為 0-255 任一數字，但勿與已存在 IP 位置衝突)、子網路遮罩 (subnet mask) 設定為 `255.255.255.0`。在裝置的瀏覽器網址列輸入 `192.168.0.100:5000`，即可連接網頁。
+
+相機網頁服務如下圖所示：
+
+![image](https://github.com/user-attachments/assets/a3a01b56-3f0c-44c2-8027-202b4fe93f6d)
 
 
