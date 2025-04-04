@@ -45,8 +45,20 @@ ICAM 相機服務為可運行於瀏覽器上的網頁服務，使用者透過使
 	- 區域網路連線：將裝置和 ICAM 連接於同一區域網路內，在裝置的瀏覽器網址列輸入 `<ICAM IP>:5000`，即可連接網頁。
 	- 網路線對接裝置和 ICAM：將網路線對接裝置與 ICAM，在裝置上設定網路連線 (TCP/IPv4)，IP 設定為 `192.168.0.X` (X 可為 0-255 任一數字，但勿與已存在 IP 位置衝突)、子網路遮罩 (subnet mask) 設定為 `255.255.255.0`。在裝置的瀏覽器網址列輸入 `192.168.0.100:5000`，即可連接網頁。
 
-相機網頁服務如下圖所示：
+## ICAM 取像教學
 
-![image](https://github.com/user-attachments/assets/a3a01b56-3f0c-44c2-8027-202b4fe93f6d)
+1. 在 ICAM 網頁工具的首頁開新專案 (New Project)。
 
+   ![image](https://github.com/user-attachments/assets/ce126bf2-bedf-474b-a3e3-a14681dff941)
+   
+2. 在專案設定畫面中填入專案名稱 (Project Name)、專案簡述 (Description)、選擇解析度 (Resolution)、像素格式 (Pixel Format)、啟動取像模式 (Trigger Mode)。設定完成後點擊「下一步」(Next)、並點擊「播放」(Play) 開始取像。
+
+   ![image](https://github.com/user-attachments/assets/814c7c54-8f78-4ceb-8194-c07c1e11fa0d)
+   
+3. 取像過程中可利用影像預覽畫面下方的「儲存」(Save) 功能保存影像，但這項功能只有在「連續取像模式」(Continuous Mode) 能作用，且影像會被存入：`/opt/advantech/web/temp_-
+folder/project/{projectName}/images`。
+
+   ![image](https://github.com/user-attachments/assets/9ceae2ef-34b2-40d3-b7c2-51871438afd3)
+
+4. 影像預覽畫面右側的區域可以進行多種相機設定。另外，ICAM 也提供了 Python API 功能，讓使用者除了透過網頁工具進行設定，也能使用程式化的方式控制相機。
 
