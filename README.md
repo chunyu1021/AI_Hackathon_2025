@@ -49,16 +49,37 @@ ICAM 相機服務為可運行於瀏覽器上的網頁服務，使用者透過使
 
 1. 在 ICAM 網頁工具的首頁開新專案 (New Project)。
 
-   ![image](https://github.com/user-attachments/assets/ce126bf2-bedf-474b-a3e3-a14681dff941)
+   ![image](https://github.com/user-attachments/assets/3a70b8d9-5d21-47ef-8fcb-7c6add6c8ec8)
    
 2. 在專案設定畫面中填入專案名稱 (Project Name)、專案簡述 (Description)、選擇解析度 (Resolution)、像素格式 (Pixel Format)、啟動取像模式 (Trigger Mode)。設定完成後點擊「下一步」(Next)、並點擊「播放」(Play) 開始取像。
 
-   ![image](https://github.com/user-attachments/assets/814c7c54-8f78-4ceb-8194-c07c1e11fa0d)
+   ![image](https://github.com/user-attachments/assets/2cbdfbaa-b139-4e78-872b-3211d4f5f90e)
    
 3. 取像過程中可利用影像預覽畫面下方的「儲存」(Save) 功能保存影像，但這項功能只有在「連續取像模式」(Continuous Mode) 能作用，且影像會被存入：`/opt/advantech/web/temp_-
 folder/project/{projectName}/images`。
 
-   ![image](https://github.com/user-attachments/assets/9ceae2ef-34b2-40d3-b7c2-51871438afd3)
+   ![image](https://github.com/user-attachments/assets/4ff49325-d3bb-4f8f-acc7-1efc87ba0357)
 
-4. 影像預覽畫面右側的區域可以進行多種相機設定。另外，ICAM 也提供了 Python API 功能，讓使用者除了透過網頁工具進行設定，也能使用程式化的方式控制相機。
+4. 影像預覽畫面右側的區域可以進行多種相機設定。另外，ICAM 也提供了 Python API 功能，讓使用者除了透過網頁工具進行設定，也能使用程式化的方式控制相機。API 使用方法與測試，請在網址列輸入：`http://<ICAM IP>/apidocs`
 
+## ICAM 專案管理
+
+按照上述步驟將 ICAM 設定完成後，專案就會出現在網頁工具的首頁。首頁提供基本的專案管理功能：
+
+- Auto-run：啟用 Auto-run 將選定的專案設定自動啟動，只要 ICAM 開機時就會自動套用專案設定。
+
+   ![image](https://github.com/user-attachments/assets/0697f092-9edb-488e-b6f6-077be534e138)
+
+- 匯出專案 (Export)：將選定的專案匯出後，就能將設定檔下載保存並分享給其他 ICAM。
+
+   ![image](https://github.com/user-attachments/assets/bcebca8d-ada9-4aac-bd97-583dd0eaca10)
+
+- 匯入檔案 (Import)：將設定檔匯入網頁工具。
+
+   ![image](https://github.com/user-attachments/assets/6ceae0e7-6d12-4edf-8c19-a3c38b14b690)
+
+## 參考資料
+
+- [User Manual of ICAM-540](https://downloadt.advantech.com/download/downloadsr.aspx?File_Id=1-2NA6ODY) (ICAM-540 使用手冊)
+- [Programming Guide of ICAM-540](https://downloadt.advantech.com/download/downloadsr.aspx?File_Id=1-2NA6ODY) (ICAM-540 程式開發指南)
+- [Getting Started Guide for AWS IoT_ICAM-540](https://downloadt.advantech.com/download/downloadsr.aspx?File_Id=1-2NTB7BO) (AWS IoT Greengrass 與 ICAM-540 協作指南)
