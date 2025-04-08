@@ -18,6 +18,12 @@
 - USB 無線網路卡
 - ICAM 腳架
 
+## 問題討論與回答
+
+活動期間，參賽者若有技術問題需要研華或 AWS 人員協助，請加入 Line 討論群組或是在這個 Repo 開立新 [Issues](https://github.com/chunyu1021/AI_Hackathon_2025/issues)。
+
+![image](https://github.com/user-attachments/assets/0ca0a04f-f77e-44df-b249-5c0f5952406e)
+
 ## ICAM-540 簡介
 
 研華 ICAM-540 系列是一款先進的工業 AI 相機，具有多段變焦鏡頭、LED 照明、SONY 4K 工業級影像感測器、和 NVIDIA Orin NX 模組。其可變焦鏡頭和一體化的 LED 照明簡化了安裝和維護流程。
@@ -37,7 +43,7 @@ ICAM-540 系列包含了基於 Python 的 CAMNavi SDK 和 NVIDIA DeepStream SDK�
 本次工作坊需要參賽者連接電源、網路線：
 
 - 電源連接 ICAM 接頭處上方有一向內凸起，用這凸起處對準 ICAM 上相對應的接口、插入接口後將接頭旋緊。接頭未旋緊前，勿通電。
-- 網路線連接頭在左下位置也有一不規則形狀用以對準 ICAM 接口，將連接頭插入接扣後旋緊接頭。
+- 網路線連接頭在左下位置也有一不規則形狀用以對準 ICAM 接口，將連接頭插入接口後旋緊接頭。
 
 ![image](https://github.com/user-attachments/assets/fec24519-f8bf-4543-b9ec-42a1f9fe3801)
 
@@ -69,7 +75,7 @@ folder/project/{projectName}/images`。
 
    ![image](https://github.com/user-attachments/assets/4ff49325-d3bb-4f8f-acc7-1efc87ba0357)
 
-4. 影像預覽畫面右側的區域可以進行多種相機設定。另外，ICAM 也提供了 Python API 功能，讓使用者除了透過網頁工具進行設定，也能使用程式化的方式控制相機。API 使用方法與測試，請在網址列輸入：`http://<ICAM IP>/apidocs`
+4. 影像預覽畫面右側的區域可以進行多種相機設定。另外，ICAM 也提供了 Python API 功能，讓使用者除了透過網頁工具進行設定，也能使用程式化的方式控制相機。API 使用方法與測試，請在網址列輸入：`http://<ICAM IP>:5000/apidocs`
 
 ## ICAM 專案管理
 
@@ -91,4 +97,3 @@ folder/project/{projectName}/images`。
 
 - [User Manual of ICAM-540](https://downloadt.advantech.com/download/downloadsr.aspx?File_Id=1-2NA6ODY) (ICAM-540 使用手冊)
 - [Programming Guide of ICAM-540](https://downloadt.advantech.com/download/downloadsr.aspx?File_Id=1-2NA6ODY) (ICAM-540 程式開發指南)
-- [Getting Started Guide for AWS IoT_ICAM-540](https://downloadt.advantech.com/download/downloadsr.aspx?File_Id=1-2NTB7BO) (AWS IoT Greengrass 與 ICAM-540 協作指南)
