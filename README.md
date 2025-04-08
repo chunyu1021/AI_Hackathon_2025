@@ -4,10 +4,19 @@
 
 ## 使用材料
 
-- ICAM-540 (S-mount) * 1
-- Power cable with M12 connector * 1
-- Network adapter * 1
-- Ethernet cable * 1
+工作坊當天發放：
+
+- ICAM-540-30W (S-mount)
+- 電源供應器 + 電源和 DI/O 傳輸線 (帶有 M12 接頭)
+- 網路線 (帶有 M12 接頭)
+- 電源供應器傳輸線
+
+![image](https://github.com/user-attachments/assets/64d94d54-fc99-4c84-baee-541a4b6dbbe6)
+
+工作坊結束後寄送：
+
+- USB 無線網路卡
+- ICAM 腳架
 
 ## ICAM-540 簡介
 
