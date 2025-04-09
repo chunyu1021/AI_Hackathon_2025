@@ -51,6 +51,8 @@ ICAM-540 系列包含了基於 Python 的 CAMNavi SDK 和 NVIDIA DeepStream SDK�
 
 ![image](https://github.com/user-attachments/assets/2af6e526-4a6d-4264-8b9b-a9df6e3476ce)
 
+⚠️ ***ICAM 啟動後，溫度會升高，請避免直接接觸 ICAM 表面。***
+
 ## 啟動 ICAM 相機服務 (Web Utility)
 
 ICAM 相機服務為可運行於瀏覽器上的網頁服務，使用者透過使用網頁介面操作 ICAM 的取像和網路設定。以下介紹在 ICAM 和遠端進入網頁介面的方式：
@@ -59,6 +61,13 @@ ICAM 相機服務為可運行於瀏覽器上的網頁服務，使用者透過使
 - 由遠端 (另一台裝置) 進入：
 	- 區域網路連線：將裝置和 ICAM 連接於同一區域網路內，在裝置的瀏覽器網址列輸入 `<ICAM IP>:5000`，即可連接網頁。
 	- 👉 網路線對接裝置和 ICAM：將網路線對接裝置與 ICAM，在裝置上設定網路連線 (TCP/IPv4)，IP 設定為 `192.168.0.X` (X 可為 0-255 任一數字，但勿與已存在 IP 位置衝突)、子網路遮罩 (subnet mask) 設定為 `255.255.255.0`。在裝置的瀏覽器網址列輸入 `192.168.0.100:5000`，即可連接網頁。
+
+### 比賽現場設備設置建議
+
+比賽現場建議採取同工作坊的設備設置：
+
+1. 以網路線對接 ICAM 和筆電，用來使用 ICAM 網頁工具或 SSH 連線控制相機和進行開發。
+2. 插上 USB 無線網路卡為 ICAM 提供無線網路，用來使用 AWS 雲端服務。
 
 ## ICAM 取像教學
 
@@ -75,7 +84,26 @@ folder/project/{projectName}/images`。
 
    ![image](https://github.com/user-attachments/assets/4ff49325-d3bb-4f8f-acc7-1efc87ba0357)
 
-4. 影像預覽畫面右側的區域可以進行多種相機設定。另外，ICAM 也提供了 Python API 功能，讓使用者除了透過網頁工具進行設定，也能使用程式化的方式控制相機。API 使用方法與測試，請在網址列輸入：`http://<ICAM IP>:5000/apidocs`
+4. 影像預覽畫面右側的區域可以進行多種相機設定。另外，ICAM 也提供了 Python API 功能，讓使用者除了透過網頁工具進行設定，也能使用程式化的方式控制相機。API 使用方法與測試，請在網址列輸入：`http://<ICAM IP>:5000/apidocs`後查看。Python 範例程式，請參考[此連結](https://drive.google.com/file/d/1oublr9ByOkKBj-pFa7G4itNl2BQJTHEr/view?usp=drive_link)。
+
+## ICAM 取像技巧
+
+- 像素格式 BGRA 和 YUY2 選擇？
+	- BGRA: 無壓縮，每個像素都有完整的色彩資訊，適合對色彩要求度高的應用。
+	- YUY2: 色彩資料經壓縮，較省頻寬、效率較高。
+ 
+   	| Resolution | BGR Color Format | YUV2 Color Format|
+   	| -------- | ------- | ------- |
+   	| 3860x2178  | 7.33    | 12.66 |
+   	| 1920x1080 | 27.99    |38.66 |
+   	| 1408x1080    | 36.66    |38.66|
+  	| 640x480    | 36.66    |38.66|
+
+- 初次取像常用設定：焦距、燈光 (Camera Acq. Settings -> Focus/Lighting Settings)
+	- 焦距：先調大焦距設定 (例如：100，上限 300)，再逐步縮小焦距，找到合適的焦距。(每調整一次焦距數值記得要按 Enter)
+	- 燈光：八種模式，0 為全關、3 為全開。
+	- 儲存設定：記得按下設定區域下方的 Save 將設定保存。
+ - 調整解析度 (ROI and S/W Flip Settings -> Image Resolution)：需先將 Camera Preview 中的 Disconnect 按下，再做調整。
 
 ## ICAM 專案管理
 
