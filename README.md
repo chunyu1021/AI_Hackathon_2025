@@ -93,7 +93,7 @@ folder/project/{projectName}/images`。
 	- BGRA: 無壓縮，每個像素都有完整的色彩資訊，適合對色彩要求度高的應用。
 	- YUY2: 色彩資料經壓縮，較省頻寬、效率較高。
  
-   	| Resolution | BGR Color Format | YUV2 Color Format|
+   	| Resolution | BGRA Color Format | YUV2 Color Format|
    	| -------- | ------- | ------- |
    	| 3860x2178  | 7.33    | 12.66 |
    	| 1920x1080 | 27.99    |38.66 |
