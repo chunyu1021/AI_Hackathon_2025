@@ -69,7 +69,7 @@ ICAM 相機服務為可運行於瀏覽器上的網頁服務，使用者透過使
 
 1. 以網路線對接 ICAM 和筆電，用來使用 ICAM 網頁工具或 SSH 連線控制相機和進行開發。
 2. 插上 USB 無線網路卡為 ICAM 提供無線網路，用來使用 AWS 雲端服務。
-3. 視應用情境自行準備電腦螢幕和鍵盤滑鼠組控制 ICAM。
+3. 👉 視應用情境自行準備電腦螢幕和鍵盤滑鼠組控制 ICAM。
 
 ## ICAM 取像教學
 
@@ -94,7 +94,7 @@ folder/project/{projectName}/images`。
 	- BGRA: 無壓縮，每個像素都有完整的色彩資訊，適合對色彩要求度高的應用。
 	- YUY2: 色彩資料經壓縮，較省頻寬、效率較高。
  
-   	| Resolution | BGRA Color Format | YUV2 Color Format|
+   	| Resolution | BGR Color Format | YUV2 Color Format|
    	| -------- | ------- | ------- |
    	| 3860x2178  | 7.33    | 12.66 |
    	| 1920x1080 | 27.99    |38.66 |
