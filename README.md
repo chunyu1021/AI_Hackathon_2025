@@ -21,7 +21,7 @@
 
 ## 問題討論與回答
 
-活動期間，參賽者若有技術問題需要研華或 AWS 人員協助，請加入 Line 討論群組或是在這個 Repo 開立新 [Issues](https://github.com/chunyu1021/AI_Hackathon_2025/issues)。
+活動期間，參賽者若有技術問題需要研華或 AWS 人員協助，請加入 Line 討論群組。
 
 ![image](https://github.com/user-attachments/assets/0ca0a04f-f77e-44df-b249-5c0f5952406e)
 
