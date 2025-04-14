@@ -70,6 +70,12 @@ ICAM 相機服務為可運行於瀏覽器上的網頁服務，使用者透過使
 1. 以網路線對接 ICAM 和筆電，用來使用 ICAM 網頁工具或 SSH 連線控制相機和進行開發。
 2. 插上 USB 無線網路卡為 ICAM 提供無線網路，用來使用 AWS 雲端服務。
 3. 👉 視應用情境自行準備電腦螢幕和鍵盤滑鼠組控制 ICAM。
+4. 若需遠端為 ICAM 連上 wifi，可使用 [connect_wifi.sh](https://github.com/chunyu1021/AI_Hackathon_2025/blob/main/connect_wifi.sh)
+
+```sh
+$ chmod +x wifi_manager.sh
+$ ./wifi_manager.sh
+```
 
 ## ICAM 取像教學
 
