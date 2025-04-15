@@ -130,13 +130,13 @@ folder/project/{projectName}/images`。
 ## 進階使用 ICAM-540
 
 ICAM 提供兩種程式化控制相機的方式：
-   - Web Utility Restful API: 透過 Restful API 控制 Web Utility 前端，可參考 API 文件 - 在網址列輸入：`http://<ICAM IP>:5000/apidocs`後查看。
+   - Web Utility Restful API：透過 Restful API 控制 Web Utility 前端。在網址列輸入：`http://<ICAM IP>:5000/apidocs`後查看文件。
    - CAMNavi SDK：CAMNavi SDK 是較 Web Utitlity 更底層的 SDK，不透過 Web Utility (或其 API) 控制相機。若要使用 CAMNavi SDK API，需先將 `web.service` 關閉：
 
      ```sh
      $ sudo systemctl stop web.service
      ```
-     CAMNavi SDK 範例程式，請參考[此連結](https://drive.google.com/file/d/1oublr9ByOkKBj-pFa7G4itNl2BQJTHEr/view?usp=drive_link)。
+     CAMNavi SDK 範例程式，請參考[此連結](https://drive.google.com/file/d/1oublr9ByOkKBj-pFa7G4itNl2BQJTHEr/view?usp=drive_link)、開發指南請到參考資料。
 
 ## 參考資料
 
