@@ -54,7 +54,7 @@ ICAM-540 系列包含了基於 Python 的 CAMNavi SDK 和 NVIDIA DeepStream SDK�
 
 ⚠️ ***ICAM 啟動後，溫度會升高，請避免直接接觸 ICAM 表面。***
 
-## 啟動 ICAM 相機服務 (Web Utility)
+## 使用 ICAM Web Utility
 
 ICAM 相機服務為可運行於瀏覽器上的網頁服務，使用者透過使用網頁介面操作 ICAM 的取像和網路設定。以下介紹在 ICAM 和遠端進入網頁介面的方式：
 
@@ -70,7 +70,7 @@ ICAM 相機服務為可運行於瀏覽器上的網頁服務，使用者透過使
 1. 以網路線對接 ICAM 和筆電，用來使用 ICAM 網頁工具或 SSH 連線控制相機和進行開發。
 2. 插上 USB 無線網路卡為 ICAM 提供無線網路，用來使用 AWS 雲端服務。
 3. 👉 視應用情境自行準備電腦螢幕和鍵盤滑鼠組控制 ICAM。
-4. 若需遠端為 ICAM 連上 wifi，可使用 [connect_wifi.sh](https://github.com/chunyu1021/AI_Hackathon_2025/blob/main/connect_wifi.sh)
+4. 若需遠端為 ICAM 連上 wifi，可使用 [connect_wifi.sh](https://github.com/chunyu1021/AI_Hackathon_2025/blob/main/connect_wifi.sh)。
 
 ```sh
 $ chmod +x wifi_manager.sh
