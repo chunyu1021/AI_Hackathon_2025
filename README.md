@@ -92,8 +92,6 @@ folder/project/{projectName}/images`。
 
    ![image](https://github.com/user-attachments/assets/4ff49325-d3bb-4f8f-acc7-1efc87ba0357)
 
-4. 影像預覽畫面右側的區域可以進行多種相機設定。另外，ICAM 也提供了 Python API 功能，讓使用者除了透過網頁工具進行設定，也能使用程式化的方式控制相機。API 使用方法與測試，請在網址列輸入：`http://<ICAM IP>:5000/apidocs`後查看。Python 範例程式，請參考[此連結](https://drive.google.com/file/d/1oublr9ByOkKBj-pFa7G4itNl2BQJTHEr/view?usp=drive_link)。
-
 ## ICAM 取像技巧
 
 - 像素格式 BGRA 和 YUY2 選擇？
@@ -128,6 +126,17 @@ folder/project/{projectName}/images`。
 - 匯入檔案 (Import)：將設定檔匯入網頁工具。
 
    ![image](https://github.com/user-attachments/assets/6ceae0e7-6d12-4edf-8c19-a3c38b14b690)
+
+## 進階使用 ICAM-540
+
+ICAM 提供兩種程式化控制相機的方式：
+   - Web Utility Restful API: 透過 Restful API 控制 Web Utility 前端，可參考 API 文件 - 在網址列輸入：`http://<ICAM IP>:5000/apidocs`後查看。
+   - CAMNavi SDK：CAMNavi SDK 是較 Web Utitlity 更底層的 SDK，不透過 Web Utility (或其 API) 控制相機。若要使用 CAMNavi SDK API，需先將 `web.service` 關閉：
+
+     ```sh
+     $ sudo systemctl stop web.service
+     ```
+     CAMNavi SDK 範例程式，請參考[此連結](https://drive.google.com/file/d/1oublr9ByOkKBj-pFa7G4itNl2BQJTHEr/view?usp=drive_link)。
 
 ## 參考資料
 
