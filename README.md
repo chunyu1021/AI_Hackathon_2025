@@ -132,4 +132,4 @@ folder/project/{projectName}/images`。
 ## 參考資料
 
 - [User Manual of ICAM-540](https://downloadt.advantech.com/download/downloadsr.aspx?File_Id=1-2NA6ODY) (ICAM-540 使用手冊)
-- [Programming Guide of ICAM-540](https://downloadt.advantech.com/download/downloadsr.aspx?File_Id=1-2NA6ODY) (ICAM-540 程式開發指南)
+- [Programming Guide of ICAM-540](https://downloadt.advantech.com/download/downloadsr.aspx?File_Id=1-2MUS0ZK) (ICAM-540 程式開發指南)
