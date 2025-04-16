@@ -2,6 +2,13 @@
 
 ⚡ ICAM 預設的影像輸出位置為 /dev/video10，無論是程式開發或使用 AWS 服務指令，若要使用 ICAM 影像，請務必先使用 [ICAM 網頁工具](https://github.com/chunyu1021/AI_Hackathon_2025?tab=readme-ov-file#icam-%E5%8F%96%E5%83%8F%E6%95%99%E5%AD%B8)將 ICAM 影像播放，如下圖 (Camera Status: Playing)。一旦影像已在播放狀態，就可將網頁關閉，影像會持續在 /dev/video10 輸出。
 
+⚠️ ***請務必要將 ICAM 置於播放模式，否則 /dev/video10 將取不出影像。*** 
+
+另外有兩個主要因素會影響上傳頻寬：
+
+1. Frame rate - 預設值為 30 fps，可視現場頻寬大小，往下調節。 
+2. Resolution - 下圖範例為 1920x1080，可視現場頻寬大小，調節適當的 Resolution。Resolution 調整後大小，將對應到以下範例中的 gst-launch-1.0 指令後面帶入參數值。
+
 ![image](https://github.com/user-attachments/assets/157fefec-ad50-42fb-a9c3-6b90121041dc)
 
 ## 將 ICAM 影像串流上 AWS KVS
