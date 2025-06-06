@@ -1,6 +1,6 @@
 # 4/10 研華科技 賽前工作坊
 
-歡迎大家參加 2025 AWS x Advantech AI 黑客松 🚀
+歡迎大家參加 2025 AWS x Advantech GenAI 黑客松 🚀
 
 ## 使用材料
 
